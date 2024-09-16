@@ -13,7 +13,7 @@ var Parameters = (function() {
     if (results == null)
       return "";
     else
-      return decodeURIComponent(results[1]);
+      return decodeURIComponent(results[1].replace(/\+/g, '%20'));
   }
 
   return {
